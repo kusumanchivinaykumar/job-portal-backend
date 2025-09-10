@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 // ---------------- Post a Job ----------------
-router.post("/jobs", postJob);
+router.post("/jobs",authenticateToken, postJob);
 
 // ---------------- Get All Jobs ----------------
 router.get("/jobs", getAllJobs);
