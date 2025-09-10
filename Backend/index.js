@@ -27,7 +27,7 @@ app.use(cookieParser());
 // Enable CORS for frontend with credentials (cookies)
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // your frontend URL
+    origin: ["https://job-portal-frontend-1-gj0h.onrender.com"], // your frontend URL
     credentials: true,
   })
 );
